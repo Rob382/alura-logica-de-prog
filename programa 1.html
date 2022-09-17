@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+
+
+<script>
+
+	function sl(){document.write("<br>");}
+	function imprimir(frase){document.write(frase);}
+
+	var año = 2022;
+	var edadcarlos = año-2005;
+	var edadpedro = año-1995;
+	var edadjuan = año-2000;
+
+	document.write("juan tiene: <br>");
+	imprimir(edadjuan + " años");
+	sl()
+	imprimir("Pedro tiene: <br>");
+	imprimir(edadpedro + " años");
+	sl()
+	imprimir("Carlos tiene: <br>");
+	imprimir(edadcarlos + " años");  
+	sl()
+	
+	edad_promedio = ((edadcarlos+edadjuan+edadpedro)/3);
+	imprimir("<br>La edad promedio es ="+edad_promedio+"<br>");
+
+</script>

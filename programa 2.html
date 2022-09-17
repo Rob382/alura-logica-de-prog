@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+
+<script>
+
+function imccalc(peso,altura){
+	return(peso/(altura*altura));
+}
+
+nombre = prompt("nombre de la personita que requiere saber su imc porfavorsito gracias vuelva pronto");
+pesopersona = prompt(nombre + "cual es su peso?")
+alturapersona = prompt("cual es su altura?" + nombre);
+
+imc = imccalc(pesopersona,alturapersona);
+document.write("el imc de " + nombre + " es " + imc);
+
+</script>

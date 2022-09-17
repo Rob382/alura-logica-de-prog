@@ -1,0 +1,59 @@
+<canvas width="600" height="400"> </canvas>
+
+<script>
+	
+	var pantalla = document.querySelector("canvas");
+	var pincel = pantalla.getContext("2d");
+
+	//piel
+	pincel.fillStyle = "#E8BEAC";
+	pincel.fillRect(0,0,350,350);
+
+	//cabello
+	pincel.fillStyle = "black";
+	pincel.fillRect(0,0,44,121);
+	pincel.fillStyle = "black";
+	pincel.fillRect(306,0,44,121);
+	pincel.fillStyle = "black";
+	pincel.fillRect(0,0,350,74);
+
+	//barba
+	pincel.fillStyle = "rgba(110, 38, 14, .70)";
+	pincel.fillRect(100,250,150,100);
+	pincel.fillStyle = "rgba(110, 38, 14, .65)";
+	pincel.fillRect(0,210,44,140);
+	pincel.fillStyle = "rgba(110, 38, 14, .65)";
+	pincel.fillRect(306,210,44,140);
+	pincel.fillStyle = "rgba(110, 38, 14, .75";
+	pincel.beginPath();
+	pincel.moveTo(44,250);
+	pincel.lineTo(306,250);
+	pincel.lineTo(306,350);
+	pincel.lineTo(44,350);
+	pincel.fill();
+
+
+	//ojos
+	pincel.fillStyle = "white";
+	pincel.fillRect(50,155,45,45);
+	pincel.fillStyle = "#0080FF";
+	pincel.fillRect(95,155,45,45);
+
+	pincel.fillStyle = "#0080FF";
+	pincel.fillRect(210,155,45,45);
+	pincel.fillStyle = "white";
+	pincel.fillRect(255,155,45,45);
+
+	//nariz
+	pincel.fillStyle = "rgba(110, 38, 14, .15)";
+	pincel.fillRect(140,200,70,50);
+	//boca
+	pincel.fillStyle = "#B04A4A";
+	pincel.fillRect(140,250,70,50);
+
+	
+
+	
+
+
+</script>

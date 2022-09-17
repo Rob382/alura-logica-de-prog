@@ -1,0 +1,43 @@
+<canvas width="600" height="400"></canvas>
+<script>
+	
+	var pantalla = document.querySelector("canvas");
+	var pincel = pantalla.getContext("2d");
+
+	pincel.fillStyle = "lightgrey";
+	pincel.fillRect(0,0,660,400);
+
+	function circulo(x,y,radio){
+		pincel.fillStyle = "blue";
+		pincel.beginPath();
+		pincel.arc(x,y,radio,0,2*Math.PI);
+		pincel.fill();
+	}
+
+	function cls(){
+		pincel.clearRect(0,0,600,400);
+	}
+
+	var x = 0;
+	var direccion = true;
+	function frames(){
+		cls();
+		circulo(x,20,10);
+		if(x > 600 && direccion == true){	//solo cuando se cumplan las dos condiciones cambiar direcc
+			direccion = false;
+		}
+		if(x < 0 && direccion == false){	//solo cuando se cumplan las dos condiciones cambiar direcc
+			direccion = true
+		}
+
+		if(direccion){
+			x++;
+		}
+		else{
+			x--;
+		}
+	}
+
+	setInterval(frames, 1);
+
+</script>
